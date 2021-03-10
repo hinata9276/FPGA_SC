@@ -7,7 +7,7 @@ It was proposed in the 1960s when the combinational logic gates for binary compu
 
 It seems like quantum computing but it is not, it just make use of probabilistic sampling to compute, but the bit information itself still follows the nature of binary bit. Of course there are pros and cons in the SC. It is only suited for some applications, especially for image processing and CNN.
 
-Please check out my articles (Lee, Abdul Halim, DOI:10.7717/peerj-cs.309) for more information. Citations are welcomed.
+Do check out my paper (Lee, Abdul Halim, DOI:10.7717/peerj-cs.309) for more information. Citations are welcomed.
 
 # FPGA library in SC is far lacking!
 I am personally doing research on implmeneting SC elements in FPGA, and not much open source can be found in this field of study. Thus, I made this library for personal collection as well as looking for improvement through the power of open source.
@@ -29,7 +29,7 @@ Note: LFSR (Linear Feedback Shift Register), MUX (Multiplexer)
 
 - Stochastic Number Generator (SNG)
   - Weighted Binary Generator (WBG)(4-bit and 8-bit)(original ASIC transcoded logic circuit)
-    - LFSR + WBG frontend, with permutated pair output (Salehi, DOI:10.1109/TVLSI.2019.2963678)
+    - LFSR + WBG frontend(M. Yang, B. Li, et.al., DOI:10.1109/ISVLSI.2018.00037) with permutated pair output(Salehi, DOI:10.1109/TVLSI.2019.2963678)
     - WBG backend
   - Weighted Binary Converter (WBC)(4-bit and 8-bit)(novel FPGA-optimized implementation)(Paper accepted)
     - LFSR + WBC with permutated pair output
