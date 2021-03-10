@@ -13,18 +13,21 @@ Do check out my paper (Lee, Abdul Halim, DOI:10.7717/peerj-cs.309) for more info
 I am personally doing research on implmeneting SC elements in FPGA, and not much open source can be found in this field of study. Thus, I made this library for personal collection as well as looking for improvement through the power of open source.
 
 # Development environment
+Software:
 - Xilinx Vivado HLx 2019
-- Xilinx FPGA development board (I am using Zybo)
 - MATLAB 2020b (for simulation, import and export, and analysis)
   - Deep Learning Toolbox
   - Parallel Computing Toolbox
   - Add-On: Deep Learning Toolbox Importer for Tensorflow-Keras Models, MATLAB support for MinGW-w64 C/C++ Compiler
+
+Hardware:
+- Xilinx FPGA development board (I am using Zybo)PC:
 - PC:
   - more core is better, stochastic computation simulation will use parallel workers!
-  - 64GB RAM and above are recommended for simulation!
+  - 64GB RAM or above are recommended for simulation!
 
 # Currently developed components
-1) Hardware, 
+1) FPGA Hardware, 
 Note: LFSR (Linear Feedback Shift Register), MUX (Multiplexer)
 
 - Stochastic Number Generator (SNG)
@@ -42,8 +45,8 @@ Note: LFSR (Linear Feedback Shift Register), MUX (Multiplexer)
   - compute CNN from 1 layer down to 5 layers, both in binary domain and stochastic domain, only linear, ReLU and Tanh activation function available.
   - only 3x3 kernel weight is supported, only simulate on one weight. 
 - MUX SUC CNN weight scheduler (requires at least MATLAB version 2020b, older than that cannot work.)
-  - Import HDL5 CNN model and compute the timing for MUX SUC
-  - Analyze the MUX timing requirement and optimize timing to reduce required LFSR.
+  - Import HDF5 Keras CNN model, partition and compute the timing for MUX SUC for each weight and bias.
+  - Analyze the MUX timing requirement and optimize timing to reduce required LFSR resources.
   - Export the timing and MUX I/O allocation in XML file, to be used in Xilinx Vivado HLS C++ compiler.
 
 # Components under development
