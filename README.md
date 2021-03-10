@@ -21,7 +21,7 @@ Software:
   - Add-On: Deep Learning Toolbox Importer for Tensorflow-Keras Models, MATLAB support for MinGW-w64 C/C++ Compiler
 
 Hardware:
-- Xilinx FPGA development board (I am using Zybo)PC:
+- Xilinx FPGA development board (I am using Zybo)
 - PC:
   - more core is better, stochastic computation simulation will use parallel workers!
   - 64GB RAM or above are recommended for simulation!
