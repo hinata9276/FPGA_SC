@@ -16,6 +16,12 @@ I am personally doing research on implmeneting SC elements in FPGA, and not much
 - Xilinx Vivado HLx 2019
 - Xilinx FPGA development board (I am using Zybo)
 - MATLAB 2020b (for simulation, import and export, and analysis)
+  - Deep Learning Toolbox
+  - Parallel Computing Toolbox
+  - Add-On: Deep Learning Toolbox Importer for Tensorflow-Keras Models, MATLAB support for MinGW-w64 C/C++ Compiler
+- PC:
+  - more core is better, stochastic computation simulation will use parallel workers!
+  - 64GB RAM and above are recommended for simulation!
 
 # Currently developed components
 1) Hardware, 
