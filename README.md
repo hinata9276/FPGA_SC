@@ -27,8 +27,8 @@ Hardware:
   - more core is better, stochastic computation simulation will use parallel workers!
   - 64GB RAM or above are recommended for large-scale SC simulation.
 
-# Currently developed components
-1) FPGA Hardware, 
+## Currently developed components
+1) FPGA Hardware:
 - Stochastic Number Generator (SNG)
   - Weighted Binary Generator (WBG)(4-bit and 8-bit)(original ASIC transcoded logic circuit)
     - LFSR + WBG frontend(M. Yang, B. Li, et.al., DOI:10.1109/ISVLSI.2018.00037) with permutated pair output(Salehi, DOI:10.1109/TVLSI.2019.2963678)
@@ -38,21 +38,29 @@ Hardware:
     - MUX SNG
 - Note: LFSR (Linear Feedback Shift Register), MUX (Multiplexer)
 
-2) Software / simualtion
+2) Software / simualtion:
 - LFSR and WBG simulation
-  - Simulate LFSR and WBG (circular shift, peermute)
-- MUX SUC CNN multi-layer computation simulation
+  - Simulate LFSR and WBG (circular shift, permute)
+- MUX select random function
+  - Simulate MUX select random programming to operate MUX SUC Adder.
+- MUX SUC CNN multi-layer computation simulation (still working on it...)
   - compute CNN from 1 layer down to 5 layers, both in binary domain and stochastic domain, only linear, ReLU and Tanh activation function available.
   - only 3x3 kernel weight is supported, only simulate on one weight. 
-- MUX SUC CNN weight scheduler (requires at least MATLAB version 2020b, older than that cannot work.)
+- MUX SUC CNN weight scheduler (requires at least MATLAB v2020b, older than that cannot work.) (still working on it...)
   - Import HDF5 Keras CNN model, partition and compute the timing for MUX SUC for each weight and bias.
   - Analyze the MUX timing requirement and optimize timing to reduce required LFSR resources.
   - Export the timing and MUX I/O allocation in XML file, to be used in Xilinx Vivado HLS C++ compiler.
 
-# Components under development
-- Shifted Unary Coded (SUC) Adder
-- MUX-based SUC Adder, 8-bit resolution
-- many more....
+## Components under development
+1) FPGA Hardware:
+- MUX-based Shifted Unary Coded (SUC) Adder, 8-bit resolution
+- Stanh (stochastic TanH) FSM
+- End counter
+- updating...
+
+2) Software / simualtion:
+- MUX SUC random function generator (C++)
+- updating...
 
 # Usage
 The resources contains MATLAB folder and Xilinx Vivado folder. MATLAB codes are mainly used for simulation, data synthesis and file import/export, whilst Xilinx C++ codes are mainly used for Xilinx Vivado High Level Synthesis (HLS) to generate HDL and RTL file from C++ code function.
