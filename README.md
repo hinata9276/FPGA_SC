@@ -15,21 +15,20 @@ I am personally doing research on implementing SC elements in FPGA, and not much
 # Development environment
 Software:
 - Xilinx Vivado HLx 2019
+  - Additional libraries: RapidXML (please download and include it in the compiler).
 - MATLAB 2020b (for simulation, import and export, and analysis)
   - Deep Learning Toolbox
   - Parallel Computing Toolbox
-  - Add-On: Deep Learning Toolbox Importer for Tensorflow-Keras Models, MATLAB support for MinGW-w64 C/C++ Compiler
+  - Add-On: Deep Learning Toolbox Importer for Tensorflow-Keras Models, MATLAB support for MinGW-w64 C/C++ Compiler (use add-on manager to get them)
 
 Hardware:
-- Xilinx FPGA development board (I am using Zybo)
+- Xilinx FPGA development board (I am using Digilent Zybo (Xilinx Zynq Z7010 FPGA SoC), any compatible boards are welcomed to be verified)
 - PC:
   - more core is better, stochastic computation simulation will use parallel workers!
-  - 64GB RAM or above are recommended for simulation!
+  - 64GB RAM or above are recommended for large-scale SC simulation.
 
 # Currently developed components
 1) FPGA Hardware, 
-Note: LFSR (Linear Feedback Shift Register), MUX (Multiplexer)
-
 - Stochastic Number Generator (SNG)
   - Weighted Binary Generator (WBG)(4-bit and 8-bit)(original ASIC transcoded logic circuit)
     - LFSR + WBG frontend(M. Yang, B. Li, et.al., DOI:10.1109/ISVLSI.2018.00037) with permutated pair output(Salehi, DOI:10.1109/TVLSI.2019.2963678)
@@ -37,6 +36,7 @@ Note: LFSR (Linear Feedback Shift Register), MUX (Multiplexer)
   - Weighted Binary Converter (WBC)(4-bit and 8-bit)(novel FPGA-optimized implementation)(Paper accepted)
     - LFSR + WBC with permutated pair output
     - MUX SNG
+- Note: LFSR (Linear Feedback Shift Register), MUX (Multiplexer)
 
 2) Software / simualtion
 - LFSR and WBG simulation
@@ -63,7 +63,7 @@ THe MATLAB folder contains collection of simulation and import/export fuctions.
 - SUC_simulation_nxpx.m -> To simulate the CNN in both binary and stochastic domains, up to 5 layers depth. 
 - LFSR_simulation.m -> To simulate the generation of LFSR arrays, including circular shifting and permutation techniques in LFSR sharing scheme.
 - rest with .mat format is the data for "SUC_simulation_nxpx" simulation.
-*More info (code usage and functions) could be found in the code itself.
+- More info (code usage and functions) could be found in the code itself.
 
 ## C++ coding
 - updating...
