@@ -7,7 +7,7 @@ It was proposed in the 1960s when the combinational logic gates for binary compu
 
 It seems like quantum computing but it is not, it just make use of probabilistic sampling to compute, but the bit information itself still follows the nature of binary bit. Of course there are pros and cons in the SC. It is only suited for some applications, especially for image processing and CNN.
 
-Do check out my paper (Lee, Abdul Halim, DOI:10.7717/peerj-cs.309) for more information. Citations are welcomed.
+Do check out my paper (Lee, Abdul Halim, DOI:10.7717/peerj-cs.309) for more detailed review regarding SC, especially in the CNN use case. Citations are welcomed.
 
 # FPGA library in SC is far lacking!
 I am personally doing research on implmeneting SC elements in FPGA, and not much open source can be found in this field of study. Thus, I made this library for personal collection as well as looking for improvement through the power of open source.
