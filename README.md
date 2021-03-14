@@ -59,8 +59,11 @@ The resources contains MATLAB folder and Xilinx Vivado folder. MATLAB codes are 
 
 ## MATLAB coding
 THe MATLAB folder contains collection of simulation and import/export fuctions.
-- Random_function.mat -> To simulate the programming of converting list of weight to random MUX select input for MUX SUC Adder. More info could be found in the code itself.
-- SUC_simulation_nxpx.mat -> To simulate the CNN in both binary and stochastic domains, up to 5 layers depth. More info could be found in the code itself.
+- Random_function.m -> To simulate the programming of converting list of weight to random MUX select input for MUX SUC Adder. More info could be found in the code itself.
+- SUC_simulation_nxpx.m -> To simulate the CNN in both binary and stochastic domains, up to 5 layers depth. 
+- LFSR_simulation.m -> To simulate the generation of LFSR arrays, including circular shifting and permutation techniques in LFSR sharing scheme.
+- rest with .mat format is the data for "SUC_simulation_nxpx" simulation.
+*More info (code usage and functions) could be found in the code itself.
 
 ## C++ coding
 - updating...
