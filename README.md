@@ -3,14 +3,14 @@ This library contains the resources for Stochastic Computing (SC) implementation
 
 # What is Stochastic Computing?
 Stochastic computing (SC) is another computing domain in contrast to ubiquitous binary computing. Unlike binary computing, SC exploits the probability mathematics to perform calculation with single logic gate.
-It was proposed in the 1960s when the combinational logic gates for binary computing was expensive at that time, then SC was abandoned when the binary computing becomes feasible and efficient with silicon chip technology. Nowadays, the bring up is mostly due to the AI compute bottlenecking and edge couputing application such as image processing and signal processing, in which SC could provide the alternatives for more efficient coumputation in those field of applications.
+It was proposed in the 1960s when the combinational logic gates for binary computing was expensive at that time, then SC was abandoned when the binary computing becomes feasible and efficient with silicon chip technology. Nowadays, the bring up of SC is mostly due to the AI compute and edge couputing application such as image processing and CNN inferencing, in which SC could provide the alternatives for more efficient coumputation in those field of applications.
 
-It seems like quantum computing but it is not, it just make use of probabilistic sampling to compute, but the bit information itself still follows the nature of binary bit. Of course there are pros and cons in the SC. It is only suited for some applications, especially for image processing and CNN.
+Do not confuse with quantum computing, SC just make use of probabilistic sampling to compute, but the bit information itself still follows the nature of digital binary bit. Of course there are pros and cons in the SC. It is only suited for some applications, especially for image processing and CNN.
 
 Do check out my paper (Lee, Abdul Halim, DOI:10.7717/peerj-cs.309) for more detailed review regarding SC, especially in the CNN use case. Citations are welcomed.
 
 # FPGA library in SC is far lacking and unoptimized!
-I am personally doing research on implementing SC elements in FPGA, and not much open source can be found in this field of study. Most of the SC research are biased to Application Specific Integrated Circuit (ASIC) design. Thus, I made this library for personal collection in the process of ofpimizing SC for FPGA. Meanwhile, I also look for improvement through the power of open source community.
+I am personally doing research on implementing SC elements in FPGA, and not much open source can be found in this field of study. Most of the SC research are biased to Application Specific Integrated Circuit (ASIC) design. Thus, I made this library for personal collection in the process of opimizing SC im for FPGA. Meanwhile, I also look for improvement through the power of open source community.
 
 # Development environment
 Software:
