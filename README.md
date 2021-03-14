@@ -31,8 +31,10 @@ Hardware:
 1) FPGA Hardware:
 - Stochastic Number Generator (SNG)
   - Weighted Binary Generator (WBG)(4-bit and 8-bit)(original ASIC transcoded logic circuit)
-    - LFSR + WBG frontend(M. Yang, B. Li, et.al., DOI:10.1109/ISVLSI.2018.00037) with permutated pair output(Salehi, DOI:10.1109/TVLSI.2019.2963678)
-    - WBG backend
+    - LFSR +
+      - WBG frontend partial sharing(M. Yang, B. Li, et.al., DOI:10.1109/ISVLSI.2018.00037) 
+      - permutated pair output(Salehi, DOI:10.1109/TVLSI.2019.2963678)
+      - WBG backend
   - Weighted Binary Converter (WBC)(4-bit and 8-bit)(novel FPGA-optimized implementation)(Paper accepted)
     - LFSR + WBC with permutated pair output
     - MUX SNG
