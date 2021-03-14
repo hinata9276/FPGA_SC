@@ -9,8 +9,8 @@ It seems like quantum computing but it is not, it just make use of probabilistic
 
 Do check out my paper (Lee, Abdul Halim, DOI:10.7717/peerj-cs.309) for more detailed review regarding SC, especially in the CNN use case. Citations are welcomed.
 
-# FPGA library in SC is far lacking!
-I am personally doing research on implmeneting SC elements in FPGA, and not much open source can be found in this field of study. Thus, I made this library for personal collection as well as looking for improvement through the power of open source.
+# FPGA library in SC is far lacking and unoptimized!
+I am personally doing research on implementing SC elements in FPGA, and not much open source can be found in this field of study. Most of the SC research are biased to Application Specific Integrated Circuit (ASIC) design. Thus, I made this library for personal collection in the process of ofpimizing SC for FPGA. Meanwhile, I also look for improvement through the power of open source community.
 
 # Development environment
 Software:
