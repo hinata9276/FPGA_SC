@@ -5,7 +5,7 @@ This library contains the resources for Stochastic Computing (SC) implementation
 Stochastic computing (SC) is another computing domain in contrast to ubiquitous binary computing. Unlike binary computing, SC exploits the probability mathematics to perform calculation with single logic gate.
 It was proposed in the 1960s when the combinational logic gates for binary computing was expensive at that time, then SC was abandoned when the binary computing becomes feasible and efficient with silicon chip technology. Nowadays, the bring up of SC is mostly due to the AI compute and edge couputing application such as image processing and CNN inferencing, in which SC could provide the alternatives for more efficient coumputation in those field of applications.
 
-Do not confuse with quantum computing, SC just make use of probabilistic sampling to compute, but the bit information itself still follows the nature of digital binary bit. Of course there are pros and cons in the SC. It is only suited for some applications, especially for image processing and CNN.
+Do not confuse with quantum computing, SC just make use of probabilistic sampling to compute, but the bit information itself still follows the nature of digital binary bit. Of course there are give and takes in the SC. It is only suited for some applications, especially for image processing and CNN.
 
 Do check out my paper (Lee, Abdul Halim, DOI:10.7717/peerj-cs.309) for more detailed review regarding SC, especially in the CNN use case. Citations are welcomed.
 
