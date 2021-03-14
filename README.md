@@ -52,4 +52,15 @@ Note: LFSR (Linear Feedback Shift Register), MUX (Multiplexer)
 # Components under development
 - Shifted Unary Coded (SUC) Adder
 - MUX-based SUC Adder, 8-bit resolution
-- 
+- many more....
+
+# Usage
+The resources contains MATLAB folder and Xilinx Vivado folder. MATLAB codes are mainly used for simulation, data synthesis and file import/export, whilst Xilinx C++ codes are mainly used for Xilinx Vivado High Level Synthesis (HLS) to generate HDL and RTL file from C++ code function.
+
+## MATLAB coding
+THe MATLAB folder contains collection of simulation and import/export fuctions.
+- Random_function.mat -> To simulate the programming of converting list of weight to random MUX select input for MUX SUC Adder. More info could be found in the code itself.
+- SUC_simulation_nxpx.mat -> To simulate the CNN in both binary and stochastic domains, up to 5 layers depth. More info could be found in the code itself.
+
+## C++ coding
+- updating...
