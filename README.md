@@ -63,7 +63,7 @@ Hardware:
 - updating...
 
 # Usage
-The resources contains MATLAB folder and Xilinx Vivado folder. MATLAB codes are mainly used for simulation, data synthesis and file import/export, whilst Xilinx C++ codes are mainly used for Xilinx Vivado High Level Synthesis (HLS) to generate HDL and RTL file from C++ code function.
+The resources contains MATLAB folder and Xilinx Vivado folder. MATLAB codes are mainly used for simulation, data synthesis and analysis, and file import/export, whilst Xilinx C++ codes are mainly used for Xilinx Vivado High Level Synthesis (HLS) to generate HDL and RTL file from C++ code function.
 
 ## MATLAB coding
 THe MATLAB folder contains collection of simulation and import/export fuctions.
