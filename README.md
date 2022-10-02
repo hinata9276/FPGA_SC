@@ -14,30 +14,37 @@ I am personally doing research on implementing SC elements in FPGA, and not much
 
 # Development environment
 Software:
-- Xilinx Vivado HLx 2019
-  - Additional libraries: RapidXML (please download and include it in the compiler).
+- Xilinx Vivado HLx 2019 / Vitis HLS 2020
+  - Additional libraries: none
 - MATLAB 2020b (for simulation, import and export, and analysis)
-  - Deep Learning Toolbox
-  - Parallel Computing Toolbox
+  - Deep Learning Toolbox (for binary CNN)
+  - Parallel Computing Toolbox (for SC CNN theoretical simulation)
   - Add-On: Deep Learning Toolbox Importer for Tensorflow-Keras Models, MATLAB support for MinGW-w64 C/C++ Compiler (use add-on manager to get them)
+  - Community add-on: multiwaitbar, RouletteWheelSelection, 
 
 Hardware:
-- Xilinx FPGA development board (I am using Digilent Zybo (Xilinx Zynq Z7010 FPGA SoC), any compatible boards are welcomed to be verified)
+- Xilinx FPGA development board (I am using Digilent Zybo (Xilinx Zynq Z7010 FPGA SoC), and official Xilinx Kintex7 KC705 dev kit)
 - PC:
-  - more core is better, stochastic computation simulation will use parallel workers!
+  - more core is better, stochastic computation simulation will use up all parallel workers for vector computing!
   - 64GB RAM or above are recommended for large-scale SC simulation.
 
 ## Currently developed components
 1) FPGA Hardware:
 - Stochastic Number Generator (SNG)
   - Weighted Binary Generator (WBG)(4-bit and 8-bit)(original ASIC transcoded logic circuit)
-    - LFSR +
+    - LFSR (circular shifting, permuted pair, reset timing injection, EDT capability)
       - WBG frontend partial sharing(M. Yang, B. Li, et.al., DOI:10.1109/ISVLSI.2018.00037) 
       - permutated pair output(Salehi, DOI:10.1109/TVLSI.2019.2963678)
     - WBG backend
   - Weighted Binary Converter (WBC)(4-bit and 8-bit)(novel FPGA-optimized implementation)(Paper accepted)
     - LFSR + WBC with permutated pair output
     - MUX SNG
+- Input MUX SNG array with serial interface
+- SC CNN Conv layer 1 (MAC-FG, SC MAC, PC, Novel BReLU)
+- SC CNN Conv layer 2 (MAC-FG, SC MAC, PC, Novel BReLU)
+- SC CNN Conv layer 3 (MAC-FG, SC MAC, PC, Novel BReLU)
+- SC CNN Conv layer 3 counter with serial interface
+- IP integration (implemented successfully @ 90MHz FPGA)
 - Note: LFSR (Linear Feedback Shift Register), MUX (Multiplexer)
 
 2) Software / simualtion:
