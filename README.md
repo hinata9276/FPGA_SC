@@ -36,7 +36,7 @@ Hardware:
       - WBG frontend partial sharing(M. Yang, B. Li, et.al., DOI:10.1109/ISVLSI.2018.00037) 
       - permutated pair output(Salehi, DOI:10.1109/TVLSI.2019.2963678)
     - WBG backend
-  - Weighted Binary Converter (WBC)(4-bit and 8-bit)(novel FPGA-optimized implementation)(Paper accepted)
+  - Weighted Binary Converter (WBC)(4-bit and 8-bit)(novel FPGA-optimized implementation)(Lee, Abdul Halim, Ab Wahab, DOI: 10.1007/978-981-16-8129-5_94)
     - LFSR + WBC with permutated pair output
     - MUX SNG
 - Input MUX SNG array with serial interface
