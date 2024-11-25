@@ -67,7 +67,7 @@ Hardware:
 - End counter
 - updating...
 
-2) Software / simualtion:
+2) Software / simulation:
 - MUX SUC random function generator (C++)
 - updating...
 
