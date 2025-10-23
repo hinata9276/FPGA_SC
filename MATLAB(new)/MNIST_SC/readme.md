@@ -11,3 +11,7 @@ Steps to reproduce the MATLAB simulation
 2) Open the SC_MNIST_Sim.mlx. You may need to change the associated directories before running the live script.
 
 3) All the SC functions are contained in the Appendix section in the live script. 
+
+Expected results:
+Binary CNN accuracy = 0.9836
+Stochastic Computing CNN accuracy = 
