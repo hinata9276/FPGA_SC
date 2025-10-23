@@ -9,7 +9,11 @@ It was proposed in the 1960s when the combinational logic gates for binary compu
 
 Do not confuse with quantum computing, SC just make use of probabilistic sampling to compute, but the bit information itself still follows the nature of digital binary bit. Of course there are give and takes in the SC. It is only suited for some applications, especially for image processing and CNN.
 
-Do check out my paper (Lee, Abdul Halim, DOI:10.7717/peerj-cs.309) for more detailed review regarding SC, especially in the CNN use case. Citations are welcomed.
+Do check out my following paper for more detailed review regarding SC, especially in the CNN use case. Citations are welcomed.
+https://doi.org/10.1109/ACCESS.2025.3539986 (Toward Universal Multiplexer Multiply-Accumulate Architecture In Stochastic Computing, 2025)
+https://doi.org/10.34133/research.0307 (Stochastic Computing Convolution Neural Network Architecture Reinvented For Highly Efficient Artificial Intelligence Workload on Field Programmable Gate Array, 2024)
+https://doi.org/10.1007/978-981-16-8129-5_94 (Novel FPGA-Optimized Stochastic Number Generator for Stochastic Computing, 2022)
+https://doi.org/10.7717/peerj-cs.309 (Stochastic computing in convolutional neural network implementation: a review, 2020)
 
 # FPGA library in SC is far lacking and unoptimized!
 I am personally doing research on implementing SC elements in FPGA, and not much open source can be found in this field of study. Most of the SC research are biased to Application Specific Integrated Circuit (ASIC) design. Thus, I made this library for personal collection in the process of opimizing SC for FPGA.
