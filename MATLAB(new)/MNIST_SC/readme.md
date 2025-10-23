@@ -1,11 +1,13 @@
-Step to reproduce the MATLAB simulation
+Steps to reproduce the MATLAB simulation
 
-1) extract the zip files:
+1) Extract the zip files:
 
    -> multiwaitbar.m is for showing progress (to lessen the programmer's anxiety)
 
    -> schedule_MNISTnet2_trimmedOpClk stored the MNIST CNN information in the SC domain
 
-   -> skip the gz files as it will be automatically unzipped in the simulation script
+   -> skip the gz files as they will be automatically unzipped in the simulation script
 
-2) open the SC_MNIST_Sim.mlx
+2) Open the SC_MNIST_Sim.mlx. You may need to change the associated directories before running the live script.
+
+3) All the SC functions are contained in the Appendix section in the live script. 
