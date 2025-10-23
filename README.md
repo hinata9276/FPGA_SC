@@ -1,6 +1,8 @@
 # FPGA_SC
 This library contains the resources for Stochastic Computing (SC) implementation in FPGA.
 
+Note: Just uploaded the simulation code in MATLAB(New). You could simulate MNIST CNN classification in the SC domain.
+
 # What is Stochastic Computing?
 Stochastic computing (SC) is another computing domain in contrast to ubiquitous binary computing. Unlike binary computing, SC exploits the probability mathematics to perform calculation with single logic gate.
 It was proposed in the 1960s when the combinational logic gates for binary computing was expensive at that time, then SC was abandoned when the binary computing becomes feasible and efficient with silicon chip technology. Nowadays, the bring up of SC is mostly due to the AI compute and edge couputing application such as image processing and CNN inferencing, in which SC could provide the alternatives for more efficient coumputation in those field of applications.
