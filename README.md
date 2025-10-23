@@ -1,22 +1,27 @@
 # FPGA_SC
 This library contains the resources for Stochastic Computing (SC) implementation in FPGA.
 
-Note: Just uploaded the simulation code in MATLAB(New). You could simulate MNIST CNN classification in the SC domain.
+Note: Just uploaded the simulation code in MATLAB(New). You could simulate MNIST CNN classification in the SC domain. Still updating the main readme...
 
 # What is Stochastic Computing?
-Stochastic computing (SC) is another computing domain in contrast to ubiquitous binary computing. Unlike binary computing, SC exploits the probability mathematics to perform calculation with single logic gate.
-It was proposed in the 1960s when the combinational logic gates for binary computing was expensive at that time, then SC was abandoned when the binary computing becomes feasible and efficient with silicon chip technology. Nowadays, the bring up of SC is mostly due to the AI compute and edge couputing application such as image processing and CNN inferencing, in which SC could provide the alternatives for more efficient coumputation in those field of applications.
+Stochastic computing (SC) is another computing domain in contrast to ubiquitous binary computing. Unlike binary computing, SC exploits probability mathematics to perform calculations with a single logic gate.
+It was proposed in the 1960s, when combinational logic gates for binary computing were expensive; SC was abandoned as binary computing became feasible and efficient with silicon chip technology. Nowadays, the rise of SC is primarily due to AI and edge computing applications, such as image processing and CNN inference, where SC can provide alternatives for more efficient computation.
 
-Do not confuse with quantum computing, SC just make use of probabilistic sampling to compute, but the bit information itself still follows the nature of digital binary bit. Of course there are give and takes in the SC. It is only suited for some applications, especially for image processing and CNN.
+Do not confuse with quantum computing; SC uses probabilistic sampling to compute, but the bit information itself still follows the nature of a digital binary bit. Of course, there are give-and-takes in the SC. It is only suited for some applications, especially for image processing and CNN.
 
-Do check out my following paper for more detailed review regarding SC, especially in the CNN use case. Citations are welcomed.
+Do check out my following paper for a more detailed review and research regarding SC, especially in the CNN use case. Citations are welcome.
+
 https://doi.org/10.1109/ACCESS.2025.3539986 (Toward Universal Multiplexer Multiply-Accumulate Architecture In Stochastic Computing, 2025)
+
 https://doi.org/10.34133/research.0307 (Stochastic Computing Convolution Neural Network Architecture Reinvented For Highly Efficient Artificial Intelligence Workload on Field Programmable Gate Array, 2024)
+
 https://doi.org/10.1007/978-981-16-8129-5_94 (Novel FPGA-Optimized Stochastic Number Generator for Stochastic Computing, 2022)
+
 https://doi.org/10.7717/peerj-cs.309 (Stochastic computing in convolutional neural network implementation: a review, 2020)
 
+
 # FPGA library in SC is far lacking and unoptimized!
-I am personally doing research on implementing SC elements in FPGA, and not much open source can be found in this field of study. Most of the SC research are biased to Application Specific Integrated Circuit (ASIC) design. Thus, I made this library for personal collection in the process of opimizing SC for FPGA.
+I am personally doing research on implementing SC elements in FPGA, and not much open source can be found in this field of study. Most of the SC research is biased to Application Specific Integrated Circuit (ASIC) design. Thus, I made this library for personal collection in the process of opimizing SC for FPGA.
 
 # Development environment
 Software:
@@ -31,7 +36,7 @@ Software:
 Hardware:
 - Xilinx FPGA development board (I am using Digilent Zybo (Xilinx Zynq Z7010 FPGA SoC), and official Xilinx Kintex7 KC705 dev kit)
 - PC:
-  - more core is better, stochastic computation simulation will use up all parallel workers for vector computing!
+  - More cores are better, stochastic computation simulation will use up all parallel workers for vector computing!
   - 64GB RAM or above are recommended for large-scale SC simulation.
 
 ## Currently developed components
