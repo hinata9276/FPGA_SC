@@ -1,4 +1,4 @@
-Steps to reproduce the MATLAB simulation
+# Steps to reproduce the MATLAB simulation
 
 1) Extract the zip files:
 
@@ -10,14 +10,20 @@ Steps to reproduce the MATLAB simulation
 
    -> skip the gz files as they will be automatically unzipped in the simulation script
 
-3) Open the SC_MNIST_Sim.mlx. You may need to change the associated directories before running the live script.
+3) Open the SC_MNIST_Sim.mlx main script. You may need to change the associated directories before running the live script.
 
 4) All the SC functions are contained in the Appendix section in the live script.
 
 5) 'Sc Edt Mnist Cm-1' is a video of the results compiled into frames of a confusion matrix. For every clock cycle, it converges to the actual class.
 
-Expected results:
+## Expected results:
 
 Binary CNN accuracy = 0.9836
 
 Stochastic Computing CNN accuracy = 0.9826 (0.1% accuracy degradation!)
+
+## How does it simulate MUX operation efficiently?
+
+In MATLAB, a clock-for-clock simulation will be too slow and time-consuming. Instead, the vector computing technique is employed. It lists all selected bitstreams in rows, then takes the diagonal element of the matrix, which is functionally equivalent to a multiplexing operation across the entire runlength at once.
+
+
