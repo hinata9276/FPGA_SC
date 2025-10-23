@@ -13,5 +13,7 @@ Steps to reproduce the MATLAB simulation
 3) All the SC functions are contained in the Appendix section in the live script. 
 
 Expected results:
+
 Binary CNN accuracy = 0.9836
-Stochastic Computing CNN accuracy = 
+
+Stochastic Computing CNN accuracy = 0.9826 (0.1% accuracy degradation!)
