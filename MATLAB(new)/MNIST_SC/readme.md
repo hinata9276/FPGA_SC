@@ -8,7 +8,7 @@
 
    -> skip the gz files as they will be automatically unzipped in the simulation script
 
-3) Open the SC_MNIST_Sim.mlx main script. You may need to change the associated directories before running the live script.
+3) Open the SC_MNIST_Sim.mlx main script. You may need to change the associated directories before running the live script. (only .mlx file for now, have to convert to .m file if need to open from VS Code or other apps)
 
 4) All the SC functions are contained in the Appendix section in the live script.
 
