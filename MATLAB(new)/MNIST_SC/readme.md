@@ -31,5 +31,13 @@ Stochastic Computing CNN accuracy = 0.9826 (0.1% accuracy degradation!)
 ## How does it simulate MUX operation efficiently?
 
 In MATLAB, a clock-for-clock simulation will be too slow and time-consuming. Instead, the vector computing technique is employed. It lists all selected bitstreams in rows, then takes the diagonal element of the matrix, which is functionally equivalent to a multiplexing operation across the entire runlength at once.
+
 ![image](https://raw.githubusercontent.com/hinata9276/FPGA_SC/refs/heads/main/MATLAB(new)/MNIST_SC/images/vectorComputing2.png)
+
+## Decoding the SC CNN object
+
+The binary CNN model has been custom-converted into an "MUXSchedule" object that can be read and executed in the SC domain. Note that the IO of '-1' and '0' correspond to bias and zero, respectively. The index will be offset by two in the simulation, and the IO kernel will be expanded with 'ones' and 'zeros' arrays to match the indexing.
+
+![image](https://raw.githubusercontent.com/hinata9276/FPGA_SC/refs/heads/main/MATLAB(new)/MNIST_SC/images/AppendixF.jpg)
+
 
