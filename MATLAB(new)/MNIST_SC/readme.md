@@ -43,3 +43,7 @@ The binary CNN model has been custom-converted into an "MUXSchedule" object that
 ![image](https://raw.githubusercontent.com/hinata9276/FPGA_SC/refs/heads/main/MATLAB(new)/MNIST_SC/images/scheduleMap.jpg)
 
 ![image](https://raw.githubusercontent.com/hinata9276/FPGA_SC/refs/heads/main/MATLAB(new)/MNIST_SC/images/muxSizeEncoding.jpg)
+
+There are several levels of the MACFG (MAC function generator) signals, S0 to S4. Each corresponds to the conditional probability of the MUX select input.
+
+![image](https://raw.githubusercontent.com/hinata9276/FPGA_SC/refs/heads/main/MATLAB(new)/MNIST_SC/images/encodedWeights.jpg)
