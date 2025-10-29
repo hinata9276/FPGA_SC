@@ -26,7 +26,7 @@
 
 Binary CNN accuracy = 0.9836
 
-Stochastic Computing CNN accuracy = 0.9826 (0.1% accuracy degradation!)
+Stochastic Computing CNN accuracy = 0.9826 (0.1% accuracy degradation with noisy LFSR!)
 
 ## How does it simulate MUX operation efficiently?
 
