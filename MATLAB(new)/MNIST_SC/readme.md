@@ -36,8 +36,10 @@ In MATLAB, a clock-for-clock simulation will be too slow and time-consuming. Ins
 
 ## Decoding the SC CNN object
 
-The binary CNN model has been custom-converted into an "MUXSchedule" object that can be read and executed in the SC domain. Note that the IO of '-1' and '0' correspond to bias and zero, respectively. The index will be offset by two in the simulation, and the IO kernel will be expanded with 'ones' and 'zeros' arrays to match the indexing.
+The binary CNN model has been custom-converted into an "MUXSchedule" object that can be read and executed in the SC domain. Note that the IO of '-1' and '0' correspond to bias and zero, respectively. The index will be offset by two in the simulation, and the IO kernel will be expanded with 'ones' and 'zeros' arrays to match the indexing. The MUXSize encodes the types of SC hardware to be implemented for a specific kernel.
 
 ![image](https://raw.githubusercontent.com/hinata9276/FPGA_SC/refs/heads/main/MATLAB(new)/MNIST_SC/images/AppendixF.jpg)
 
+![image](https://raw.githubusercontent.com/hinata9276/FPGA_SC/refs/heads/main/MATLAB(new)/MNIST_SC/images/scheduleMap.jpg)
 
+![image](https://raw.githubusercontent.com/hinata9276/FPGA_SC/refs/heads/main/MATLAB(new)/MNIST_SC/images/muxSizeEncoding.jpg)
