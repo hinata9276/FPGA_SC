@@ -47,3 +47,11 @@ The binary CNN model has been custom-converted into an "MUXSchedule" object that
 There are several levels of the MACFG (MAC function generator) signals, S0 to S4. Each corresponds to the conditional probability of the MUX select input.
 
 ![image](https://raw.githubusercontent.com/hinata9276/FPGA_SC/refs/heads/main/MATLAB(new)/MNIST_SC/images/encodedWeights.jpg)
+
+## How does it perform ReLU activation while you still have no idea of the exact magnitude in the SC domain?
+
+Many SC research samples the bitstream back to binary data to do ReLU activation, but that would be too late since it has already incurred compute latency. A special ReLU function is needed to be executed exclusively in the SC domain, i.e., to perform activation while the data is still in the probability domain. So, how the heck do you know if the bitstream is of positive value while you still have no idea of the final magnitude?
+
+The solution is quite elegant, i.e., exploiting biases in random distributions. If the summation is biased to negativity, then it is deemed to be zero. But how can this logic be translated into hardware architecture? [Please refer to my paper for detailed explanation.](https://doi.org/10.34133/research.0307)
+
+![image](https://raw.githubusercontent.com/hinata9276/FPGA_SC/refs/heads/main/MATLAB(new)/MNIST_SC/images/BReLU.jpg)
