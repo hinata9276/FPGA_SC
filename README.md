@@ -1,7 +1,7 @@
 # FPGA_SC
 This library contains the resources for Stochastic Computing (SC) implementation in FPGA.
 
-Note: Just uploaded the simulation code in MATLAB(New). You could simulate MNIST CNN classification in the SC domain. Still updating the main readme...
+Note: Just uploaded the simulation code in /MATLAB(New). You could simulate MNIST CNN classification in the SC domain. Tested on MATLAB 2024b. Still updating the main readme...
 
 Before continue reading, this is a video of demonstrating a multiplexer (MUX) can be an AI neuron. If you find it interesting, you are at the right place.
 
