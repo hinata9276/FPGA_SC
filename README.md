@@ -3,7 +3,7 @@ This library contains the resources for Stochastic Computing (SC) implementation
 
 Note: Just uploaded the simulation code in MATLAB(New). You could simulate MNIST CNN classification in the SC domain. Still updating the main readme...
 
-Before continue reading, this is a video of demonstrating a multiplexer (MUX) can be an AI neuron. If you find it interesting, you are in the right place.
+Before continue reading, this is a video of demonstrating a multiplexer (MUX) can be an AI neuron. If you find it interesting, you are at the right place.
 
 [![Watch the video](https://img.youtube.com/vi/hdA5uVT7YiA/0.jpg)](https://www.youtube.com/watch?v=hdA5uVT7YiA)
 
