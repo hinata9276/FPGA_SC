@@ -8,7 +8,7 @@ Before continue reading, this is a video of demonstrating a multiplexer (MUX) ca
 [![Watch the video](https://raw.githubusercontent.com/hinata9276/FPGA_SC/refs/heads/main/thumbnails.png)](https://www.youtube.com/watch?v=hdA5uVT7YiA)
 
 # What is Stochastic Computing?
-Stochastic computing (SC) is another computing domain in contrast to ubiquitous binary computing. Unlike binary computing, SC exploits probability mathematics to perform calculations with a single logic gate.
+Stochastic computing / 随机计算 / 確率的コンピューティング　(SC) is another computing domain in contrast to ubiquitous binary computing. Unlike binary computing, SC exploits probability mathematics to perform calculations with a single logic gate.
 It was proposed in the 1960s, when combinational logic gates for binary computing were expensive; SC was abandoned as binary computing became feasible and efficient with silicon chip technology. Nowadays, the rise of SC is primarily due to AI and edge computing applications, such as image processing and CNN inference, where SC can provide alternatives for more efficient computation.
 
 Do not confuse with quantum computing; SC uses probabilistic sampling to compute, but the bit information itself still follows the nature of a digital binary bit. Of course, there are give-and-takes in the SC. It is only suited for some applications, especially for image processing and CNN.
