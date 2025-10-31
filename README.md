@@ -5,7 +5,7 @@ Note: Just uploaded the simulation code in MATLAB(New). You could simulate MNIST
 
 Before continue reading, this is a video of demonstrating a multiplexer (MUX) can be an AI neuron. If you find it interesting, you are in the right place.
 
-[![Multiplexer (MUX) as an AI neuron? Why not?](https://img.youtube.com/vi/hdA5uVT7YiA/0.jpg)](https://www.youtube.com/watch?v=hdA5uVT7YiA)
+[![Watch the video](https://raw.githubusercontent.com/hinata9276/FPGA_SC/refs/heads/main/thumbnails.png)](https://raw.githubusercontent.com/hinata9276/FPGA_SC/main/MUXAI.mp4)
 
 # What is Stochastic Computing?
 Stochastic computing (SC) is another computing domain in contrast to ubiquitous binary computing. Unlike binary computing, SC exploits probability mathematics to perform calculations with a single logic gate.
