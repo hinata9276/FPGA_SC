@@ -3,6 +3,10 @@ This library contains the resources for Stochastic Computing (SC) implementation
 
 Note: Just uploaded the simulation code in MATLAB(New). You could simulate MNIST CNN classification in the SC domain. Still updating the main readme...
 
+Before continue reading, this is a video of demonstrating a multiplexer (MUX) can be an AI neuron. If you find it interesting, you are in the right place.
+
+[![Multiplexer (MUX) as an AI neuron? Why not?](https://img.youtube.com/vi/hdA5uVT7YiA/0.jpg)](https://www.youtube.com/watch?v=hdA5uVT7YiA)
+
 # What is Stochastic Computing?
 Stochastic computing (SC) is another computing domain in contrast to ubiquitous binary computing. Unlike binary computing, SC exploits probability mathematics to perform calculations with a single logic gate.
 It was proposed in the 1960s, when combinational logic gates for binary computing were expensive; SC was abandoned as binary computing became feasible and efficient with silicon chip technology. Nowadays, the rise of SC is primarily due to AI and edge computing applications, such as image processing and CNN inference, where SC can provide alternatives for more efficient computation.
