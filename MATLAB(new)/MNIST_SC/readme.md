@@ -26,7 +26,11 @@
 
 Binary CNN accuracy = 0.9836
 
-Stochastic Computing CNN accuracy = 0.9826 (0.1% accuracy degradation with noisy LFSR!)
+Stochastic Computing CNN accuracy
+
+-> 0.9826 (0.1% accuracy degradation with noisy LFSR!)
+
+-> 0.9825 (Sobol sequence, converged earlier at clock 210 out of 255!)
 
 ## How does it simulate MUX operation efficiently?
 
